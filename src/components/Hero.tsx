@@ -21,10 +21,10 @@ export default function Hero() {
           >
             Contact Me!
           </a>
-          <div className='rounded-xl pt-3 p-4 bg-background-dark text-text-dark dark:bg-background-light dark:text-text-light cursor-pointer'>
+          <div className='rounded-xl pt-3 p-4 bg-background-dark text-text-dark dark:bg-background-light dark:text-text-light'>
             <a
-              href='/doc/CV_Muhammad Hafizh Ihsan.pdf'
-              download='CV_Muhammad Hafizh Ihsan.pdf'
+              href='/doc/CV_Muhammad-Hafizh-Ihsan.pdf'
+              download='CV_Muhammad-Hafizh-Ihsan.pdf'
               target='_blank'
               rel='noopener noreferrer'
             >
