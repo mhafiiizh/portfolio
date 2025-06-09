@@ -8,11 +8,9 @@ exports.handler = async function (request, response) {
   try {
     const { template_id, user_id, template_params } = await request.json(); // Menggunakan request.json()
 
-    // Ambil rahasia dari Environment Variables Vercel
     const emailJsServiceId = process.env.EMAILJS_SERVICE_ID;
     const emailJsPublicKey = process.env.EMAILJS_PUBLIC_KEY;
 
-    // Lakukan validasi dasar jika diperlukan
     if (!emailJsServiceId || !template_id || !user_id || !template_params) {
       return new Response('Missing or invalid parameters', { status: 400 });
     }
