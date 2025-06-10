@@ -26,7 +26,7 @@ export default function Project() {
       <div className='flex flex-wrap justify-center border-b-2 border-blue-700 dark:border-blue-600 text-base md:text-lg lg:text-xl font-semibold font-inter'>
         <button
           onClick={() => handleCategoryProject('frontend')}
-          className={`px-4 py-2 transition-colors duration-300 ${
+          className={`px-4 py-2 transition-colors duration-300 cursor-pointer ${
             category === 'frontend'
               ? 'bg-blue-700 dark:bg-blue-600 rounded-t text-text-dark dark:text-text-dark'
               : 'text-text-light dark:text-text-dark hover:opacity-80'
@@ -36,7 +36,7 @@ export default function Project() {
         </button>
         <button
           onClick={() => handleCategoryProject('backend')}
-          className={`px-4 py-2 transition-colors duration-300 ${
+          className={`px-4 py-2 transition-colors duration-300 cursor-pointer ${
             category === 'backend'
               ? 'bg-blue-700 dark:bg-blue-600 rounded-t text-text-dark dark:text-text-dark'
               : 'text-text-light dark:text-text-dark hover:opacity-80'
