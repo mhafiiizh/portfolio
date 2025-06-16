@@ -103,6 +103,14 @@ export default function Nav() {
           </li>
           <li>
             <a
+              href='#skills'
+              className='hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 text-sm lg:text-base'
+            >
+              Skills
+            </a>
+          </li>
+          <li>
+            <a
               href='#project'
               className='hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 text-sm lg:text-base'
             >

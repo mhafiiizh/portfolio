@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import Nav from '@/components/Nav';
 import Project from '@/components/Project';
+import Skills from '@/components/Skills';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Nav />
         <Hero />
         <About />
+        <Skills />
         <Project />
         <Contact />
         <Footer />

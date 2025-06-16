@@ -19,7 +19,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           alt={project.title}
         />
         <div className='p-4 md:p-5 flex flex-col flex-grow'>
-          <h5 className='mb-2 text-lg md:text-xl font-bold tracking-tight text-gray-900 dark:text-white'>
+          <h5 className='mb-2 text-lg md:text-xl font-bold tracking-tight text-text-light dark:text-text-dark'>
             {project.title}
           </h5>
           <p className='mb-4 text-sm md:text-base text-gray-700 dark:text-gray-400 line-clamp-3'>

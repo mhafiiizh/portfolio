@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section
       id='about'
-      className='flex flex-col items-center justify-center min-h-screen pt-10 px-4 md:px-8 lg:px-16'
+      className='flex flex-col min-h-screen pt-10 px-4 md:px-8 lg:px-16'
     >
       <div className='w-full max-w-6xl mb-10 text-left'>
         <h1 className='font-space-grotesk text-3xl md:text-4xl lg:text-4xl font-semibold'>

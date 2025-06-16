@@ -2,7 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import heroImg from '@/assets/me_square.png';
 import CircularText from '@/components/third-party/CircularText';
-import Aurora from '@/components//third-party/Aurora';
+import Aurora from '@/components/third-party/Aurora';
+import RotatingText from '@/components/third-party/RotatingText';
 
 export default function Hero() {
   return (
@@ -17,10 +18,32 @@ export default function Hero() {
       </div>
       <div className='flex flex-col-reverse lg:flex-row items-center justify-between gap-12 md:gap-14 px-6 md:px-24 lg:px-36 xl:px-48 pt-4 md:pt-32 lg:pt-10'>
         <div className='flex flex-col gap-6 justify-center font-semibold text-center lg:text-left'>
-          <div className='text-3xl md:text-4xl lg:text-5xl flex flex-col gap-1 font-space-grotesk tracking-wide'>
-            <h1>Hello!</h1>
-            <h1>I'm Hafizh</h1>
-            <h1>Web Developer</h1>
+          <div className='flex flex-col gap-1 tracking-wide w-125'>
+            <h1 className='text-3xl md:text-4xl lg:text-5xl font-space-grotesk'>
+              Hello!
+            </h1>
+            <h1 className='text-3xl md:text-4xl lg:text-5xl font-space-grotesk'>
+              I'm Hafizh
+            </h1>
+            <div className='flex flex-row gap-3 items-center text-3xl md:text-4xl lg:text-5xl font-space-grotesk'>
+              <RotatingText
+                texts={['Frontend', 'Backend']}
+                mainClassName='w-fit px-2 sm:px-2 md:px-3 bg-cyan-300 text-text-light overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg'
+                staggerFrom={'last'}
+                initial={{ y: '100%' }}
+                animate={{ y: 0 }}
+                exit={{ y: '-120%' }}
+                staggerDuration={0.025}
+                splitLevelClassName='overflow-hidden pb-0.5 sm:pb-1 md:pb-1'
+                transition={{ type: 'spring', damping: 30, stiffness: 400 }}
+                rotationInterval={2000}
+              />
+              <h1>Developer</h1>
+            </div>
+            <p className='text-base md:text-lg lg:text-lg text-gray-700 dark:text-gray-400 font-inter'>
+              Specialized in creating responsive and performant web applications
+              with modern technologies.
+            </p>
           </div>
 
           <div className='flex flex-col md:flex-row text-base md:text-lg lg:text-xl gap-4 justify-center lg:justify-start font-inter'>

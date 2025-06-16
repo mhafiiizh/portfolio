@@ -26,3 +26,11 @@ body {
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --star-color: black;
+}
+
+.dark {
+  --star-color: white;
+}
