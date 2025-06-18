@@ -16,16 +16,16 @@ export default function Hero() {
           speed={1.0}
         />
       </div>
-      <div className='flex flex-col-reverse lg:flex-row items-center justify-between gap-12 md:gap-14 px-6 md:px-24 lg:px-36 xl:px-48 pt-4 md:pt-32 lg:pt-10'>
+      <div className='flex flex-col-reverse lg:flex-row items-center justify-between gap-12 md:gap-18 lg:gap-40 px-6 md:px-24 lg:px-30 md:pt-4 lg:pt-10'>
         <div className='flex flex-col gap-6 justify-center font-semibold text-center lg:text-left'>
-          <div className='flex flex-col gap-1 tracking-wide w-125'>
-            <h1 className='text-3xl md:text-4xl lg:text-5xl font-space-grotesk'>
+          <div className='flex flex-col gap-1 tracking-wide md:w-125'>
+            <h1 className='text-2xl md:text-4xl lg:text-5xl font-space-grotesk'>
               Hello!
             </h1>
-            <h1 className='text-3xl md:text-4xl lg:text-5xl font-space-grotesk'>
+            <h1 className='text-2xl md:text-4xl lg:text-5xl font-space-grotesk'>
               I'm Hafizh
             </h1>
-            <div className='flex flex-row gap-3 items-center text-3xl md:text-4xl lg:text-5xl font-space-grotesk'>
+            <div className='flex flex-row gap-3 items-center justify-center lg:justify-start text-2xl md:text-4xl lg:text-5xl font-space-grotesk'>
               <RotatingText
                 texts={['Frontend', 'Backend']}
                 mainClassName='w-fit px-2 sm:px-2 md:px-3 bg-cyan-300 text-text-light overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg'
@@ -40,7 +40,7 @@ export default function Hero() {
               />
               <h1>Developer</h1>
             </div>
-            <p className='text-base md:text-lg lg:text-lg text-gray-700 dark:text-gray-400 font-inter'>
+            <p className='text-base md:text-lg lg:text-lg text-gray-700 dark:text-gray-400 font-inter w-full px-4'>
               Specialized in creating responsive and performant web applications
               with modern technologies.
             </p>
@@ -68,18 +68,20 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className='relative flex justify-center items-center'>
-          <img
-            src={heroImg}
-            className='rounded-full h-[200px] w-[200px] md:h-[220px] md:w-[220px] lg:h-[250px] lg:w-[250px]'
-            alt='Hero Image'
-          />
+        <div className='flex flex-col items-center justify-center lg:pr-15'>
           <CircularText
             text='FRONTEND DEV*BACKEND DEV*'
-            onHover='speedUp'
+            onHover='slowDown'
             spinDuration={20}
-            className='absolute inset-0 h-full scale-145 md:scale-140 lg:scale-135 text-text-light dark:text-text-dark pointer-events-none'
+            className='scale-135 md:scale-155 lg:scale-190 text-text-light dark:text-text-dark'
           />
+          <div className='absolute flex justify-center items-center z-10 w-fit h-fit'>
+            <img
+              src={heroImg}
+              className='rounded-full h-[180px] w-[180px] md:h-[200px] md:w-[200px] lg:h-[250px] lg:w-[250px]'
+              alt='Hero Image'
+            />
+          </div>
         </div>
       </div>
     </div>
