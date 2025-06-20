@@ -72,7 +72,7 @@ export default function Nav() {
           text-text-light dark:text-text-dark
           fixed top-4 left-1/2 transform -translate-x-1/2
           hidden md:flex flex-row items-center
-          rounded-3xl py-2 px-5 shadow-lg z-50
+          rounded-3xl py-2 px-5 shadow-lg z-10
           transition-all duration-300 ease-in-out
           ${
             isAtTop || isHovered
@@ -151,7 +151,7 @@ export default function Nav() {
       {/* Mobile Navigation */}
       <nav
         ref={mobileNavRef}
-        className='md:hidden fixed top-0 left-0 right-0 z-50 w-full'
+        className='md:hidden fixed top-0 left-0 right-0 z-10 w-full'
       >
         <div
           className={`

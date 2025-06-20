@@ -42,7 +42,7 @@ export const projects: Project[] = [
     category: 'backend',
     description:
       'Development of a robust and scalable backend API supporting the GoStudy application. Utilizing a RESTful architecture with comprehensive Swagger documentation, ensuring secure and efficient data communication between the front-end and the database.',
-    tech: ['NodeJS', 'Express', 'Postgresql', 'JWT', 'Midtrans'],
+    tech: ['NodeJS', 'Express', 'Postgresql', 'Midtrans', 'Sequelize'],
   },
   {
     id: 5,
@@ -52,5 +52,32 @@ export const projects: Project[] = [
     description:
       "Implementation of a comprehensive testing strategy with integration testing for the GoStudy backend. This ensures the application's stability, reliability, and performance, including functional, security, and high code coverage testing to minimize bugs.",
     tech: ['Jest', 'Supertest'],
+  },
+  {
+    id: 6,
+    title: 'Email Drill',
+    image: 'images/frontend/email_drill.png',
+    category: 'frontend',
+    description:
+      'A responsive web dashboard for managing and visualizing email performance metrics. Built with modern UI components to ensure an intuitive user experience, focusing on clean design and seamless interaction.',
+    tech: ['Laravel', 'Tailwind CSS'],
+  },
+  {
+    id: 7,
+    title: 'Back End SPPku',
+    image: 'images/backend/sppku_backend.png',
+    category: 'backend',
+    description:
+      'Design and development of a robust, secure, and scalable RESTful API for the SPPku platform. Features include structured Swagger documentation, integration with Midtrans for payment processing, and efficient database management using PostgreSQL and Drizzle ORM.',
+    tech: ['NodeJS', 'Hono', 'Postgresql', 'Midtrans', 'Drizzle'],
+  },
+  {
+    id: 8,
+    title: 'Testing SPPku',
+    image: 'images/backend/coverage_sppku.png',
+    category: 'backend',
+    description:
+      'Implementation of a comprehensive integration testing strategy for the SPPku backend. Ensures system reliability, high code coverage, and security through functional and performance testing using Jest and Hono Testing utilities.',
+    tech: ['Jest', 'Hono Testing'],
   },
 ];
